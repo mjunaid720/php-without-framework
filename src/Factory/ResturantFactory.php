@@ -10,6 +10,10 @@ namespace App\Factory;
 use App\Modal\Resturant;
 use Karriere\JsonDecoder\JsonDecoder as JsonDecoder;
 
+/**
+ * Class ResturantFactory
+ * @package App\Factory
+ */
 class ResturantFactory
 {
     public static function create($arrData){

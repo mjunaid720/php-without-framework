@@ -7,6 +7,10 @@
  */
 namespace App\Repository;
 
+/**
+ * Interface Resturant
+ * @package App\Repository
+ */
 interface Resturant
 {
     /**
@@ -15,10 +19,6 @@ interface Resturant
      * @return mixed
      */
     public function setData($data, $check);
-    /**
-     * @return mixed
-     */
-    public function all();
 
     /**
      * @param $string
@@ -27,8 +27,15 @@ interface Resturant
     public function find($string);
 
     /**
+     * @param $index
+     * @param $stringString
      * @return mixed
      */
-    public function findById();
     public function findBy($index, $stringString);
+
+    /**
+     * @param $clientId
+     * @return mixed
+     */
+    public function findByClientId($clientId);
 }

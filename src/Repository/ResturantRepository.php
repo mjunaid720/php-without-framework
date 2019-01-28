@@ -9,12 +9,20 @@
 namespace App\Repository;
 use App\Factory\ResturantFactory;
 
+/**
+ * Class ResturantRepository
+ * @package App\Repository
+ */
 class ResturantRepository implements Resturant
 {
     private $jsonData;
 
+    /**
+     * @param $data
+     * @param $check
+     * @return mixed|void
+     */
     public function setData($data, $check) {
-        //echo $data; exit;
         if($check) {
             $this->jsonData = json_decode(file_get_contents($data), true);
 
@@ -24,47 +32,48 @@ class ResturantRepository implements Resturant
         }
     }
 
-    public function all()
+    /**
+     * @param $stringString
+     * @return array|mixed
+     */
+    public function find($searchString)
     {
-        // TODO: Implement all() method.
-    }
-
-    public function find($stringString)
-    {
-//        $res = new ResturantModel();
-//        $res->setValuesToSearchAllFields($stringString);
-//        $toSearch = $res->getSearchingfields();
-//        print_r((array)$toSearch);
-//        return array_filter($this->jsonData, function ($item) use ($toSearch) {
-//            return array_intersect_assoc($toSearch, $item) === $toSearch;
-//        });
         $data = [];
         for ($i=0; $i<count($this->jsonData); $i++) {
-            if (in_array($stringString, $this->jsonData[$i])) {
+            if (in_array($searchString, $this->jsonData[$i])) {
                 array_push($data, $this->jsonData[$i]);
             }
         }
         return $data;
     }
 
-    public function findBy($index, $stringString) {
+    /**
+     * @param $index
+     * @param $stringString
+     * @return array|mixed
+     */
+    public function findBy($index, $searchString) {
         $result = [];
         $restObj = ResturantFactory::create(json_encode($this->jsonData));
         foreach($restObj as $arrayInf) {
-            if($arrayInf->{$index} == $stringString) {
+            if($arrayInf->{$index} == $searchString) {
                 array_push($result, (array)$arrayInf);
             }
         }
         return $result;
     }
 
-    public function findById()
-    {
-        // TODO: Implement findById() method.
-    }
-
-    private function array_find_deep()
-    {
-
+    /**
+     * @param $clientId
+     */
+    public function findByClientId($clientId) {
+        $result = [];
+        $restObj = ResturantFactory::create(json_encode($this->jsonData));
+        foreach($restObj as $arrayInf) {
+            if($arrayInf->clientKey == $clientId) {
+                array_push($result, (array)$arrayInf);
+            }
+        }
+        return $result;
     }
 }

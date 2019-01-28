@@ -3,6 +3,7 @@
 namespace App;
 
 require __DIR__ . '/../vendor/autoload.php';
+$config = require 'Config.php';
 $injector = include('Dependencies.php');
 
 ini_set('display_errors', '1');
@@ -41,7 +42,7 @@ $routeDefinitionCallback = function (\FastRoute\RouteCollector $r) {
 };
 
 $dispatcher = \FastRoute\simpleDispatcher($routeDefinitionCallback);
-$routeInfo = $dispatcher->dispatch($request->getMethod(), '/');
+$routeInfo = $dispatcher->dispatch($request->getMethod(), str_replace($config['baseUrl'], '',$request->getPath()));
 switch ($routeInfo[0]) {
     case \FastRoute\Dispatcher::NOT_FOUND:
         $response->setContent('404 - Page not found');
@@ -55,7 +56,6 @@ switch ($routeInfo[0]) {
         $className = $routeInfo[1][0];
         $method = $routeInfo[1][1];
         $vars = $routeInfo[2];
-       // echo $className; exit;
         $class = $injector->make($className);
         $class->$method($vars);
         break;

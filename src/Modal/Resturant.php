@@ -8,7 +8,10 @@
 
 namespace App\Modal;
 
-
+/**
+ * Class Resturant
+ * @package App\Modal
+ */
 class Resturant
 {
     public $clientKey;
