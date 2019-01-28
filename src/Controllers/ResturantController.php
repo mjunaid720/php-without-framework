@@ -24,6 +24,7 @@ class ResturantController
     private $response;
     private $request;
     private $resturentRepo;
+    const STATUS_SUCCESS = 200;
 
     public function __construct(Request $request, Response $response, Resturant $resturent)
     {
@@ -44,10 +45,15 @@ class ResturantController
      */
     public function getResturents() {
         try {
-            $searchText = $this->request->getParameter('search');
-            $resultData = $this->resturentRepo->find($searchText);
-            $response = array("data" => $resultData, "status" => 200, "message" => "success");
-            echo json_encode($response); exit;
+            if (!empty($this->request->getParameter('clientKey'))) {
+                $searchText = $this->request->getParameter('search');
+                $resultData = $this->resturentRepo->find($searchText);
+                $response = array("data" => $resultData, "status" => self::STATUS_SUCCESS, "message" => "success");
+            } else {
+                $response = array("error" => "Request input mismatch", "status" => ResponseError::STATUS_REQUIED_FIELDS, "message" => "error");
+            }
+            echo json_encode($response);
+            exit;
         }
         catch (Exception $ex) {
             return new ResponseError(ResponseError::STATUS_INTERNAL_SERVER_ERROR, $ex->getMessage());
@@ -59,10 +65,14 @@ class ResturantController
      */
     public function getResturentByfield() {
         try {
-            $searchText = $this->request->getParameter('search');
-            $field = $this->request->getParameter('field');
-            $resp = $this->resturentRepo->findBy($field, $searchText);
-            $response = array("data" => $resp, "status" => 200, "message" => "success");
+            if (!empty($this->request->getParameter('search')) && !empty($this->request->getParameter('field'))) {
+                $searchText = $this->request->getParameter('search');
+                $field = $this->request->getParameter('field');
+                $resp = $this->resturentRepo->findBy($field, $searchText);
+                $response = array("data" => $resp, "status" => self::STATUS_SUCCESS, "message" => "success");
+            } else {
+                $response = array("error" => "Request input mismatch", "status" => ResponseError::STATUS_REQUIED_FIELDS, "message" => "error");
+            }
             echo json_encode($response); exit;
         }
         catch (Exception $ex) {
@@ -75,9 +85,13 @@ class ResturantController
      */
     public function getResturentByClientId() {
         try {
-            $clientId = $this->request->getParameter('clientKey');
-            $result = $this->resturentRepo->findByClientId($clientId);
-            $response = array("data" => $result, "status" => 200, "message" => "success");
+            if (!empty($this->request->getParameter('clientKey'))) {
+                $clientId = $this->request->getParameter('clientKey');
+                $result = $this->resturentRepo->findByClientId($clientId);
+                $response = array("data" => $result, "status" => self::STATUS_SUCCESS, "message" => "success");
+            } else {
+                $response = array("error" => "Request input mismatch", "status" => ResponseError::STATUS_REQUIED_FIELDS, "message" => "error");
+            }
             echo json_encode($response); exit;
         }
         catch (Exception $ex) {

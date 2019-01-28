@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c49a4d3d-33ad-423c-b0ed-47b67b52abf6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ErrorHandling/ResponseError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/UserAgentTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php_without_framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php_without_framework.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/correct.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/ResturantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ResturantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dependencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dependencies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factory/ResturantFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory/ResturantFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modal/Resturant.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modal/Resturant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/Resturant.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Resturant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ResturantRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ResturantRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ErrorHandling/ResponseError.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ErrorHandling/ResponseError.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,55 +19,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/ResturantRepository.php">
+        <entry file="file://$PROJECT_DIR$/src/Routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/Resturant.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bootstrap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Dependencies.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            <state relative-caret-position="153">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Routes.php">
+        <entry file="file://$PROJECT_DIR$/src/Controllers/ResturantController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="132">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+              <folding>
+                <element signature="e#144#162#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ErrorHandling/ResponseError.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -123,22 +83,22 @@
         <option value="$PROJECT_DIR$/src/Controllers/Homepage.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/public/.htaccess" />
-        <option value="$PROJECT_DIR$/src/ErrorHandling/ResponseError.php" />
         <option value="$PROJECT_DIR$/src/Factory/ResturantFactory.php" />
         <option value="$PROJECT_DIR$/src/Modal/Resturant.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/TestCase.php" />
         <option value="$PROJECT_DIR$/tests/UserAgentTest.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
-        <option value="$PROJECT_DIR$/src/Controllers/ResturantController.php" />
         <option value="$PROJECT_DIR$/src/tests/TestCase.php" />
-        <option value="$PROJECT_DIR$/src/Routes.php" />
         <option value="$PROJECT_DIR$/src/tests/UserAgentTest.php" />
         <option value="$PROJECT_DIR$/src/Repository/ResturantRepository.php" />
         <option value="$PROJECT_DIR$/src/Repository/Resturant.php" />
         <option value="$PROJECT_DIR$/src/Bootstrap.php" />
         <option value="$PROJECT_DIR$/src/Config.php" />
         <option value="$PROJECT_DIR$/src/Dependencies.php" />
+        <option value="$PROJECT_DIR$/src/Routes.php" />
+        <option value="$PROJECT_DIR$/src/ErrorHandling/ResponseError.php" />
+        <option value="$PROJECT_DIR$/src/Controllers/ResturantController.php" />
       </list>
     </option>
   </component>
@@ -210,36 +170,19 @@
             <path>
               <item name="php_without_framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="php_without_framework" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php_without_framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php_without_framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php_without_framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="php_without_framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Factory" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php_without_framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="php_without_framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Modal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php_without_framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php_without_framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php_without_framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php_without_framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="ErrorHandling" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -304,7 +247,7 @@
       <workItem from="1548475917010" duration="2007000" />
       <workItem from="1548542848292" duration="1911000" />
       <workItem from="1548545699253" duration="14339000" />
-      <workItem from="1548635839323" duration="6176000" />
+      <workItem from="1548635839323" duration="9507000" />
     </task>
     <task id="LOCAL-00001" summary="new changes">
       <created>1548543778595</created>
@@ -313,15 +256,21 @@
       <option name="project" value="LOCAL" />
       <updated>1548543778595</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add UNITTESTS&#10;code fixes">
+      <created>1548642877444</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1548642877444</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61010000" />
+    <option name="totallyTimeSpent" value="64341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28290468" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -349,7 +298,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="new changes" />
+    <MESSAGE value="add UNITTESTS&#10;code fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add UNITTESTS&#10;code fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../offersstore-master/app/Http/Controllers/API/BaseController.php">
@@ -578,23 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/ResturantController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="59" column="39" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="39" />
-          <folding>
-            <element signature="e#144#162#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErrorHandling/ResponseError.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Factory/ResturantFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -616,13 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/ResturantRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -650,10 +576,34 @@
     <entry file="file://$PROJECT_DIR$/correct.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/ResturantRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1193">
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErrorHandling/ResponseError.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/ResturantController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#144#162#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

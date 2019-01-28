@@ -9,6 +9,7 @@ class ResponseError
 {
     const STATUS_INTERNAL_SERVER_ERROR = 500;
     const STATUS_UNPROCESSABLE_ENTITY = 422;
+    const STATUS_REQUIED_FIELDS = 401;
 
     private $status;
     private $messages;

@@ -8,7 +8,6 @@
 declare(strict_types = 1);
 
 return [
-//    ['GET', '/', ['App\Controllers\ResturantController', 'index']],
     ['GET', '/resturents', ['App\Controllers\ResturantController', 'getResturents']],
     ['POST', '/searchByField', ['App\Controllers\ResturantController', 'getResturentByfield']],
     ['POST', '/getByClientId', ['App\Controllers\ResturantController', 'getResturentByClientId']]
