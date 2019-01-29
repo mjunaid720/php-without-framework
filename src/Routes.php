@@ -8,7 +8,7 @@
 declare(strict_types = 1);
 
 return [
-    ['GET', '/resturents', ['App\Controllers\ResturantController', 'getResturents']],
+    ['POST', '/resturents', ['App\Controllers\ResturantController', 'getResturents']],
     ['POST', '/searchByField', ['App\Controllers\ResturantController', 'getResturentByfield']],
     ['POST', '/getByClientId', ['App\Controllers\ResturantController', 'getResturentByClientId']]
 ];

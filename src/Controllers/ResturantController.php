@@ -12,8 +12,7 @@ namespace App\Controllers;
 use Http\Response;
 use Http\Request;
 use App\Repository\Resturant;
-use App\ApiResponse\ResponseError;
-use mysql_xdevapi\Exception;
+use App\ErrorHandling\ResponseError;
 
 /**
  * Class ResturantController
@@ -45,11 +44,13 @@ class ResturantController
      */
     public function getResturents() {
         try {
-            if (!empty($this->request->getParameter('clientKey'))) {
+            echo $_POST['search']; exit;
+            if (!empty($this->request->getParameter('search'))) {
                 $searchText = $this->request->getParameter('search');
                 $resultData = $this->resturentRepo->find($searchText);
                 $response = array("data" => $resultData, "status" => self::STATUS_SUCCESS, "message" => "success");
             } else {
+
                 $response = array("error" => "Request input mismatch", "status" => ResponseError::STATUS_REQUIED_FIELDS, "message" => "error");
             }
             echo json_encode($response);

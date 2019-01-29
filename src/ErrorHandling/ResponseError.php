@@ -1,6 +1,6 @@
 <?php
 
-App\ApiResponse;
+namespace App\ErrorHandling;
 
 /**
  * Class ResponseError
